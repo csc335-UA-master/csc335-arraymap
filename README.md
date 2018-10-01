@@ -110,7 +110,7 @@ public int size()
 
 This method returns the number of mappings that the object contains.
 
-```	Java
+```Java
 @Override
 public Set<Entry<K, V>> entrySet()
 ```
@@ -155,7 +155,7 @@ private class ArrayMapIterator<T> implements Iterator<T>
 
 And must provide implementations of:
 
-```
+```Java
 @Override
 public boolean hasNext()
 ```
@@ -168,7 +168,7 @@ Returns true if there are more items in the Set of Entries being iterated over.
 public T next() 
 ```
 
-Returns an Entry (an ``AbstractMap.SimpleEntry<V,E>`` for us) that represents the next 
+Returns an Entry (an ``AbstractMap.SimpleEntry<K,V>`` for us) that represents the next 
 mapping in our Map.
 
 We will not support removing items from our Map for this project.
